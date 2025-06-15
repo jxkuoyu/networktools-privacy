@@ -25,6 +25,6 @@ git push origin main
 
 echo "🎉 部署完成！"
 echo "📱 隐私政策将在几分钟内在以下地址更新："
-echo "   https://YOUR_USERNAME.github.io/networktools-privacy/"
+echo "   https://jxkuoyu.github.io/networktools-privacy/"
 echo ""
 echo "💡 提示：首次部署后，请在GitHub仓库设置中启用GitHub Pages" 
