@@ -38,6 +38,12 @@
             border-left: 4px solid #2196F3;
             margin: 20px 0;
         }
+        .warning {
+            background-color: #FFF3E0;
+            padding: 15px;
+            border-left: 4px solid #FF9800;
+            margin: 20px 0;
+        }
         .contact {
             background-color: #F5F5F5;
             padding: 20px;
@@ -50,28 +56,63 @@
         li {
             margin-bottom: 8px;
         }
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>网络工具箱 隐私政策</h1>
-        
+
         <div class="highlight">
             <strong>最后更新日期：</strong> 2025年6月<br>
             <strong>生效日期：</strong> 2025年6月
         </div>
 
         <h2>概述</h2>
-        <p>“网络工具箱”APP尊重您的隐私。本隐私政策说明了我们如何收集、使用和保护您的信息。</p>
+        <p>网络工具箱（"我们的应用"）尊重您的隐私。本隐私政策说明了我们如何收集、使用和保护您的信息。</p>
 
         <h2>信息收集</h2>
-        
+
         <h3>我们收集的信息</h3>
         <ul>
             <li><strong>网络信息</strong>：为了提供网络扫描和分析功能，应用会访问您的本地网络信息</li>
-            <li><strong>位置信息</strong>：仅用于获取WiFi网络信息，我们不会存储或传输您的位置数据</li>
-           
+            <li><strong>位置信息</strong>：仅用于获取WiFi网络信息（iOS/Android系统要求），我们不会存储或传输您的位置数据</li>
+            <li><strong>设备信息</strong>：应用可能收集基本的设备信息以确保功能正常运行</li>
         </ul>
+
+        <div class="warning">
+            <h3>第三方数据传输</h3>
+            <p>为了提供特定功能，应用会向第三方服务发送必要的数据：</p>
+
+            <p><strong>1. 公网IP查询功能</strong></p>
+            <ul>
+                <li>应用向 <code>ip-api.com</code> 发送请求以获取您的公网IP地址及大致地理位置信息（城市、地区、运营商等）</li>
+                <li>仅在您主动使用"公网IP查询"功能时发送，不涉及其他场景</li>
+            </ul>
+
+            <p><strong>2. 网速测试功能</strong></p>
+            <ul>
+                <li>应用会连接以下第三方测速镜像服务器进行下载/上传测试：</li>
+                <li>中国科学技术大学镜像 (mirrors.ustc.edu.cn)</li>
+                <li>网易镜像 (mirrors.163.com)</li>
+                <li>华中科技大学镜像 (mirrors.hust.edu.cn)</li>
+                <li>清华大学镜像 (mirrors.tuna.tsinghua.edu.cn)</li>
+                <li>Cloudflare (speed.cloudflare.com)</li>
+                <li>测速过程中仅传输测试数据，不传输个人信息</li>
+                <li>上传测试通过 <code>httpbin.org</code> 进行</li>
+            </ul>
+
+            <p><strong>3. 局域网扫描、WiFi分析、蓝牙扫描、NFC检测、端口扫描</strong></p>
+            <ul>
+                <li>以上功能的所有数据处理均在您的设备本地进行</li>
+                <li>不会将扫描结果传输到任何外部服务器</li>
+            </ul>
+        </div>
 
         <h3>我们不收集的信息</h3>
         <ul>
@@ -79,7 +120,6 @@
             <li>浏览历史</li>
             <li>联系人信息</li>
             <li>照片或媒体文件</li>
-            <li>设备信息</li>
         </ul>
 
         <h2>信息使用</h2>
@@ -95,33 +135,50 @@
             <p>我们承诺：</p>
             <ul>
                 <li><strong>不会出售</strong>您的任何信息</li>
-                <li><strong>不会共享</strong>您的个人数据给第三方</li>
-                <li><strong>不会传输</strong>您的网络信息到我们的服务器</li>
-                <li>所有数据处理都在您的设备本地进行</li>
+                <li>除上述第三方服务外，<strong>不会共享</strong>您的数据给其他第三方</li>
+                <li><strong>不会传输</strong>您的本地网络扫描结果到外部服务器</li>
             </ul>
         </div>
 
         <h2>数据安全</h2>
         <ul>
-            <li>应用不会将您的数据传输到外部服务器</li>
-            <li>所有网络扫描和分析都在本地设备上进行</li>
-            <li>我们采用行业标准的安全措施保护应用安全</li>
+            <li>除公网IP查询和网速测试功能外，所有数据处理都在您的设备本地进行</li>
+            <li>应用内购使用 Apple App Store 和 Google Play 的官方支付系统，我们不处理任何支付凭据</li>
+            <li>使用次数等非敏感数据通过系统安全存储（iOS Keychain / Android EncryptedSharedPreferences）保存</li>
         </ul>
 
         <h2>权限使用</h2>
-        
+
         <h3>位置权限</h3>
         <ul>
-            <li><strong>用途</strong>：获取WiFi网络信息（iOS系统要求）</li>
-            <li><strong>范围</strong>：仅在使用WiFi分析功能时</li>
+            <li><strong>用途</strong>：获取WiFi网络信息（iOS/Android系统要求）</li>
+            <li><strong>范围</strong>：仅在使用WiFi分析和局域网扫描功能时</li>
             <li><strong>存储</strong>：不存储位置数据</li>
+        </ul>
+
+        <h3>蓝牙权限</h3>
+        <ul>
+            <li><strong>用途</strong>：扫描附近的蓝牙设备</li>
+            <li><strong>范围</strong>：仅在使用蓝牙扫描功能时</li>
+        </ul>
+
+        <h3>NFC权限</h3>
+        <ul>
+            <li><strong>用途</strong>：读取NFC标签信息</li>
+            <li><strong>范围</strong>：仅在使用NFC检测功能时</li>
         </ul>
 
         <h3>网络权限</h3>
         <ul>
-            <li><strong>用途</strong>：扫描本地网络设备</li>
-            <li><strong>范围</strong>：仅限本地网络</li>
-            <li><strong>存储</strong>：扫描结果仅临时显示，不永久存储</li>
+            <li><strong>用途</strong>：扫描本地网络设备、进行网速测试、查询公网IP</li>
+            <li><strong>范围</strong>：本地网络扫描 + 上述第三方服务</li>
+        </ul>
+
+        <h2>内购说明</h2>
+        <ul>
+            <li>应用提供一次性内购"专业版"（network_tools_premium），解锁全部高级功能</li>
+            <li>购买通过 Apple App Store / Google Play 官方支付系统完成</li>
+            <li>购买状态和使用次数存储在设备本地安全存储中</li>
         </ul>
 
         <h2>儿童隐私</h2>
@@ -140,10 +197,10 @@
         </div>
 
         <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
-        
+
         <p style="text-align: center; color: #666; font-size: 14px;">
             © 2025 网络工具箱. 保留所有权利.
         </p>
     </div>
 </body>
-</html> 
+</html>
