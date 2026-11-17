@@ -5,202 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>网络工具箱 - 隐私政策</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #2196F3;
-            border-bottom: 3px solid #2196F3;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #1976D2;
-            margin-top: 30px;
-        }
-        h3 {
-            color: #1565C0;
-        }
-        .highlight {
-            background-color: #E3F2FD;
-            padding: 15px;
-            border-left: 4px solid #2196F3;
-            margin: 20px 0;
-        }
-        .warning {
-            background-color: #FFF3E0;
-            padding: 15px;
-            border-left: 4px solid #FF9800;
-            margin: 20px 0;
-        }
-        .contact {
-            background-color: #F5F5F5;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        li {
-            margin-bottom: 8px;
-        }
-        code {
-            background-color: #f0f0f0;
-            padding: 2px 6px;
-            border-radius: 3px;
-            font-size: 0.9em;
-        }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 20px; background: #f9f9f9; }
+        .container { background: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,.08); }
+        h1 { color: #2196F3; border-bottom: 3px solid #2196F3; padding-bottom: 10px; }
+        h2 { color: #1976D2; margin-top: 28px; }
+        .meta { background: #E3F2FD; padding: 14px; border-left: 4px solid #2196F3; margin: 16px 0; }
+        code { background: #f0f0f0; padding: 2px 6px; border-radius: 3px; }
+        table { border-collapse: collapse; width: 100%; margin: 12px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background: #f5f5f5; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>网络工具箱 隐私政策</h1>
-
-        <div class="highlight">
-            <strong>最后更新日期：</strong> 2026年6月<br>
-            <strong>生效日期：</strong> 2026年6月
-        </div>
-
-        <h2>概述</h2>
-        <p>网络工具箱（"我们的应用"）尊重您的隐私。本隐私政策说明了我们如何收集、使用和保护您的信息。</p>
-
-        <h2>信息收集</h2>
-
-        <h3>我们收集的信息</h3>
-        <ul>
-            <li><strong>网络信息</strong>：为了提供网络扫描和分析功能，应用会访问您的本地网络信息</li>
-            <li><strong>位置信息</strong>：仅用于获取WiFi网络信息（iOS/Android系统要求），我们不会存储或传输您的位置数据</li>
-            <li><strong>设备信息</strong>：应用可能收集基本的设备信息以确保功能正常运行</li>
-        </ul>
-
-        <div class="warning">
-            <h3>第三方数据传输</h3>
-            <p>为了提供特定功能，应用会向第三方服务发送必要的数据：</p>
-
-            <p><strong>1. 公网IP查询功能</strong></p>
-            <ul>
-                <li>应用向 <code>ip-api.com</code> 发送请求以获取您的公网IP地址及大致地理位置信息（城市、地区、运营商等）</li>
-                <li>仅在您主动使用"公网IP查询"功能时发送，不涉及其他场景</li>
-            </ul>
-
-            <p><strong>2. 网速测试功能</strong></p>
-            <ul>
-                <li>应用会连接以下第三方测速镜像服务器进行下载/上传测试：</li>
-                <li>中国科学技术大学镜像 (mirrors.ustc.edu.cn)</li>
-                <li>网易镜像 (mirrors.163.com)</li>
-                <li>华中科技大学镜像 (mirrors.hust.edu.cn)</li>
-                <li>清华大学镜像 (mirrors.tuna.tsinghua.edu.cn)</li>
-                <li>Cloudflare (speed.cloudflare.com)</li>
-                <li>测速过程中仅传输测试数据，不传输个人信息</li>
-                <li>上传测试通过 <code>httpbin.org</code> 进行</li>
-            </ul>
-
-            <p><strong>3. 局域网扫描、WiFi分析、蓝牙扫描、NFC检测、端口扫描</strong></p>
-            <ul>
-                <li>以上功能的所有数据处理均在您的设备本地进行</li>
-                <li>不会将扫描结果传输到任何外部服务器</li>
-            </ul>
-        </div>
-
-        <h3>我们不收集的信息</h3>
-        <ul>
-            <li>个人身份信息</li>
-            <li>浏览历史</li>
-            <li>联系人信息</li>
-            <li>照片或媒体文件</li>
-        </ul>
-
-        <h2>信息使用</h2>
-        <p>我们收集的信息仅用于：</p>
-        <ul>
-            <li>提供网络扫描和分析功能</li>
-            <li>显示网络设备和连接信息</li>
-            <li>改善应用性能和用户体验</li>
-        </ul>
-
-        <h2>信息共享</h2>
-        <div class="highlight">
-            <p>我们承诺：</p>
-            <ul>
-                <li><strong>不会出售</strong>您的任何信息</li>
-                <li>除上述第三方服务外，<strong>不会共享</strong>您的数据给其他第三方</li>
-                <li><strong>不会传输</strong>您的本地网络扫描结果到外部服务器</li>
-            </ul>
-        </div>
-
-        <h2>数据安全</h2>
-        <ul>
-            <li>除公网IP查询和网速测试功能外，所有数据处理都在您的设备本地进行</li>
-            <li>应用内购使用 Apple App Store 和 Google Play 的官方支付系统，我们不处理任何支付凭据</li>
-            <li>使用次数等非敏感数据通过系统安全存储（iOS Keychain / Android EncryptedSharedPreferences）保存</li>
-        </ul>
-
-        <h2>权限使用</h2>
-
-        <h3>位置权限</h3>
-        <ul>
-            <li><strong>用途</strong>：获取WiFi网络信息（iOS/Android系统要求）</li>
-            <li><strong>范围</strong>：仅在使用WiFi分析和局域网扫描功能时</li>
-            <li><strong>存储</strong>：不存储位置数据</li>
-        </ul>
-
-        <h3>蓝牙权限</h3>
-        <ul>
-            <li><strong>用途</strong>：扫描附近的蓝牙设备</li>
-            <li><strong>范围</strong>：仅在使用蓝牙扫描功能时</li>
-        </ul>
-
-        <h3>NFC权限</h3>
-        <ul>
-            <li><strong>用途</strong>：读取NFC标签信息</li>
-            <li><strong>范围</strong>：仅在使用NFC检测功能时</li>
-        </ul>
-
-        <h3>网络权限</h3>
-        <ul>
-            <li><strong>用途</strong>：扫描本地网络设备、进行网速测试、查询公网IP</li>
-            <li><strong>范围</strong>：本地网络扫描 + 上述第三方服务</li>
-        </ul>
-
-        <h2>内购说明</h2>
-        <ul>
-            <li>应用提供一次性内购"专业版"（network_tools_premium），解锁全部高级功能</li>
-            <li>购买通过 Apple App Store / Google Play 官方支付系统完成</li>
-            <li>购买状态和使用次数存储在设备本地安全存储中</li>
-        </ul>
-
-        <h2>儿童隐私</h2>
-        <p>我们的应用不会故意收集13岁以下儿童的个人信息。如果我们发现收集了儿童的个人信息，我们会立即删除。</p>
-
-        <h2>政策更新</h2>
-        <p>我们可能会不时更新此隐私政策。任何更改都会在应用中通知用户。</p>
-
-        <div class="contact">
-            <h2>联系我们</h2>
-            <p>如果您对此隐私政策有任何疑问，请通过以下方式联系我们：</p>
-            <ul>
-                <li>邮箱：<strong>support@networktools.app</strong></li>
-                <li>应用内反馈功能</li>
-            </ul>
-        </div>
-
-        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
-
-        <p style="text-align: center; color: #666; font-size: 14px;">
-            © 2025 网络工具箱. 保留所有权利.
-        </p>
+<div class="container">
+    <h1>网络工具箱 隐私政策</h1>
+    <div class="meta">
+        <strong>最后更新日期：</strong>2026年11月<br>
+        <strong>生效日期：</strong>2026年11月
     </div>
+
+    <h2>概述</h2>
+    <p>网络工具箱 / Network Toolbox（「我们的应用」）尊重您的隐私。本政策说明我们如何收集、使用和保护您的信息。</p>
+
+    <h2>信息收集</h2>
+    <h3>设备上处理的信息</h3>
+    <ul>
+        <li><strong>网络信息</strong>：本地网络、Wi‑Fi、设备发现、端口等诊断数据，主要在本机处理。</li>
+        <li><strong>位置信息（使用期间）</strong>：系统可能要求位置权限以读取 Wi‑Fi SSID / 扫描周边网络。若您保存当前 WiFi，应用可能将反向地理编码后的<strong>地点文字</strong>与记录一并保存在本机。我们不会将精确 GPS 坐标上传到自有服务器。</li>
+        <li><strong>购买与使用状态</strong>：专业版档位、免费使用次数等保存在本机。</li>
+        <li><strong>设备监控列表</strong>：您收藏或监控的设备信息保存在本机。</li>
+    </ul>
+
+    <h3>第三方数据传输（仅在您主动使用对应功能时）</h3>
+    <ol>
+        <li><strong>公网 IP</strong>：请求 <code>ipwho.is</code>，失败时依次改用 <code>ipapi.co</code>、<code>api.ipify.org</code>，获取公网 IP 及大致地理位置。</li>
+        <li><strong>网速测试</strong>：连接测速镜像（中科大、清华、网易、华科、Cloudflare、Cachefly、OVH）以及 <code>httpbin.org</code> / <code>speed.cloudflare.com</code>，传输的是测速流量。</li>
+        <li><strong>Whois</strong>：向 Whois 服务器查询域名公开注册信息。</li>
+        <li><strong>反向地理编码</strong>：保存 Wi‑Fi 地点时，可能通过系统服务把坐标转成地址文字。</li>
+        <li><strong>DNS 查询</strong>：诊断功能会向您指定的服务器，或在未指定时向公共解析器 <code>8.8.8.8</code> / <code>1.1.1.1</code> 发送 DNS 查询。</li>
+        <li><strong>局域网发现</strong>：扫描时可能向 <code>239.255.255.250:1900</code> 发送 SSDP 发现请求，只用于发现同一局域网里的设备。</li>
+    </ol>
+
+    <h3>我们不收集</h3>
+    <ul>
+        <li>不以广告为目的收集个人身份信息；没有广告追踪 SDK；不使用 IDFA 做跨 App 追踪。</li>
+        <li>不收集通讯录、相册。</li>
+    </ul>
+
+    <h2>本地功能</h2>
+    <p><strong>请求调试</strong>：可以记录本应用发出的 HTTP/HTTPS 请求与响应（含正文；大流量测速只记元数据）。只存在本机，不上传。</p>
+    <p><strong>设备监控与通知</strong>：专业版可以监控指定设备是否在线，并用本地通知提醒。系统后台任务可能周期性探测您配置的局域网 IP。</p>
+    <p><strong>扫描历史</strong>：保存在本机。可以在设置里「清除本地数据」，也可以通过系统清除应用数据来删除。购买档位、语言和主题会保留。</p>
+
+    <h2>本地存储</h2>
+    <ul>
+        <li>购买档位：本机偏好设置。</li>
+        <li>使用次数与 SSH 凭据：系统安全存储。已关闭 iCloud 同步，不会在您的设备之间共享。</li>
+    </ul>
+
+    <h2>权限</h2>
+    <table>
+        <tr><th>权限</th><th>用途</th></tr>
+        <tr><td>位置（使用期间）</td><td>读取 Wi‑Fi 信息、扫描周边网络、可选保存地点标签</td></tr>
+        <tr><td>本地网络</td><td>局域网发现与诊断</td></tr>
+        <tr><td>蓝牙 / NFC</td><td>蓝牙扫描；读取 NFC 标签（专业版）</td></tr>
+        <tr><td>通知</td><td>设备监控提醒</td></tr>
+        <tr><td>网络</td><td>测速、公网 IP、Whois、DNS 查询</td></tr>
+    </table>
+
+    <h2>内购</h2>
+    <ul>
+        <li>月订阅 <code>network_tools_pro_monthly</code></li>
+        <li>年订阅 <code>network_tools_pro_yearly</code></li>
+        <li>终身 <code>network_tools_premium</code></li>
+    </ul>
+    <p>订阅由 App Store / Google Play 管理与扣费，可以在对应账户设置中取消。</p>
+
+    <h2>儿童隐私</h2>
+    <p>我们不会故意收集 13 岁以下儿童的个人信息。</p>
+
+    <h2>政策更新</h2>
+    <p>我们可能更新本政策。重大变更会通过应用或本页面告知。</p>
+
+    <h2>联系我们</h2>
+    <p>邮箱：<strong>support@networktools.app</strong></p>
+    <p style="color:#666;font-size:14px;margin-top:32px;">© 2026 网络工具箱</p>
+</div>
 </body>
 </html>
